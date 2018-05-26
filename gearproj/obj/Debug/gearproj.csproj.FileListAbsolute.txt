@@ -1,0 +1,217 @@
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\ApplicationInsights.config
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\csc.exe
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\csc.exe.config
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\csc.rsp
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\csi.exe
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\csi.rsp
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\System.AppContext.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\vbc.exe
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\vbc.exe.config
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\vbc.rsp
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\VBCSCompiler.exe
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\gearproj.dll.config
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\gearproj.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\gearproj.pdb
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Antlr3.Runtime.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\EntityFramework.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\EntityFramework.SqlServer.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.AI.Web.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.ApplicationInsights.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Owin.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Owin.Security.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Newtonsoft.Json.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Owin.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Net.Http.Formatting.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.Helpers.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.Http.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.Http.Owin.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.Http.WebHost.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.Mvc.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.Optimization.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.Razor.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.WebPages.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.WebPages.Razor.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\WebGrease.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Newtonsoft.Json.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Net.Http.Formatting.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.Helpers.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.Http.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.Http.WebHost.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.Mvc.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.Optimization.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.Razor.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.WebPages.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.WebPages.Razor.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Antlr3.Runtime.pdb
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\EntityFramework.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\EntityFramework.SqlServer.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Owin.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Owin.Security.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\System.Web.Http.Owin.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.ApplicationInsights.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\bin\Microsoft.AI.Web.xml
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\obj\Debug\gearproj.dll
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\obj\Debug\gearproj.pdb
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\obj\Debug\gearproj.Migrations.onegear.resources
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\obj\Debug\gearproj.csproj.GenerateResource.Cache
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\obj\Debug\gearproj.csprojResolveAssemblyReference.cache
+C:\Users\ESLAM\documents\visual studio 2017\Projects\gearproj\gearproj\obj\Debug\gearproj.Migrations.three.resources
+D:\GradProject\gearproj\gearproj\bin\ApplicationInsights.config
+D:\GradProject\gearproj\gearproj\bin\roslyn\csc.exe
+D:\GradProject\gearproj\gearproj\bin\roslyn\csc.exe.config
+D:\GradProject\gearproj\gearproj\bin\roslyn\csc.rsp
+D:\GradProject\gearproj\gearproj\bin\roslyn\csi.exe
+D:\GradProject\gearproj\gearproj\bin\roslyn\csi.rsp
+D:\GradProject\gearproj\gearproj\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\GradProject\gearproj\gearproj\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\GradProject\gearproj\gearproj\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\GradProject\gearproj\gearproj\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\GradProject\gearproj\gearproj\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\GradProject\gearproj\gearproj\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\GradProject\gearproj\gearproj\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\GradProject\gearproj\gearproj\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\GradProject\gearproj\gearproj\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\GradProject\gearproj\gearproj\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\GradProject\gearproj\gearproj\bin\roslyn\System.AppContext.dll
+D:\GradProject\gearproj\gearproj\bin\roslyn\System.Collections.Immutable.dll
+D:\GradProject\gearproj\gearproj\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\GradProject\gearproj\gearproj\bin\roslyn\System.IO.FileSystem.dll
+D:\GradProject\gearproj\gearproj\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\GradProject\gearproj\gearproj\bin\roslyn\System.Reflection.Metadata.dll
+D:\GradProject\gearproj\gearproj\bin\roslyn\vbc.exe
+D:\GradProject\gearproj\gearproj\bin\roslyn\vbc.exe.config
+D:\GradProject\gearproj\gearproj\bin\roslyn\vbc.rsp
+D:\GradProject\gearproj\gearproj\bin\roslyn\VBCSCompiler.exe
+D:\GradProject\gearproj\gearproj\bin\roslyn\VBCSCompiler.exe.config
+D:\GradProject\gearproj\gearproj\bin\gearproj.dll.config
+D:\GradProject\gearproj\gearproj\bin\gearproj.dll
+D:\GradProject\gearproj\gearproj\bin\gearproj.pdb
+D:\GradProject\gearproj\gearproj\bin\Antlr3.Runtime.dll
+D:\GradProject\gearproj\gearproj\bin\EntityFramework.dll
+D:\GradProject\gearproj\gearproj\bin\EntityFramework.SqlServer.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.AI.Agent.Intercept.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.AI.DependencyCollector.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.AI.Web.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.AI.WindowsServer.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.ApplicationInsights.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.AspNet.Identity.Core.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Owin.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Owin.Security.Cookies.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Owin.Security.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Owin.Security.Facebook.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Owin.Security.Google.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Owin.Security.OAuth.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Owin.Security.Twitter.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Web.Infrastructure.dll
+D:\GradProject\gearproj\gearproj\bin\Newtonsoft.Json.dll
+D:\GradProject\gearproj\gearproj\bin\Owin.dll
+D:\GradProject\gearproj\gearproj\bin\System.Net.Http.Formatting.dll
+D:\GradProject\gearproj\gearproj\bin\System.Web.Helpers.dll
+D:\GradProject\gearproj\gearproj\bin\System.Web.Http.dll
+D:\GradProject\gearproj\gearproj\bin\System.Web.Http.Owin.dll
+D:\GradProject\gearproj\gearproj\bin\System.Web.Http.WebHost.dll
+D:\GradProject\gearproj\gearproj\bin\System.Web.Mvc.dll
+D:\GradProject\gearproj\gearproj\bin\System.Web.Optimization.dll
+D:\GradProject\gearproj\gearproj\bin\System.Web.Razor.dll
+D:\GradProject\gearproj\gearproj\bin\System.Web.WebPages.Deployment.dll
+D:\GradProject\gearproj\gearproj\bin\System.Web.WebPages.dll
+D:\GradProject\gearproj\gearproj\bin\System.Web.WebPages.Razor.dll
+D:\GradProject\gearproj\gearproj\bin\WebGrease.dll
+D:\GradProject\gearproj\gearproj\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\GradProject\gearproj\gearproj\bin\Newtonsoft.Json.xml
+D:\GradProject\gearproj\gearproj\bin\System.Net.Http.Formatting.xml
+D:\GradProject\gearproj\gearproj\bin\System.Web.Helpers.xml
+D:\GradProject\gearproj\gearproj\bin\System.Web.Http.xml
+D:\GradProject\gearproj\gearproj\bin\System.Web.Http.WebHost.xml
+D:\GradProject\gearproj\gearproj\bin\System.Web.Mvc.xml
+D:\GradProject\gearproj\gearproj\bin\System.Web.Optimization.xml
+D:\GradProject\gearproj\gearproj\bin\System.Web.Razor.xml
+D:\GradProject\gearproj\gearproj\bin\System.Web.WebPages.xml
+D:\GradProject\gearproj\gearproj\bin\System.Web.WebPages.Deployment.xml
+D:\GradProject\gearproj\gearproj\bin\System.Web.WebPages.Razor.xml
+D:\GradProject\gearproj\gearproj\bin\Antlr3.Runtime.pdb
+D:\GradProject\gearproj\gearproj\bin\EntityFramework.xml
+D:\GradProject\gearproj\gearproj\bin\EntityFramework.SqlServer.xml
+D:\GradProject\gearproj\gearproj\bin\Microsoft.AspNet.Identity.Core.xml
+D:\GradProject\gearproj\gearproj\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\GradProject\gearproj\gearproj\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Owin.xml
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Owin.Security.xml
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Owin.Security.Facebook.xml
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Owin.Security.Cookies.xml
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Owin.Security.OAuth.xml
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Owin.Security.Google.xml
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Owin.Security.Twitter.xml
+D:\GradProject\gearproj\gearproj\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\GradProject\gearproj\gearproj\bin\System.Web.Http.Owin.xml
+D:\GradProject\gearproj\gearproj\bin\Microsoft.ApplicationInsights.xml
+D:\GradProject\gearproj\gearproj\bin\Microsoft.AI.DependencyCollector.xml
+D:\GradProject\gearproj\gearproj\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\GradProject\gearproj\gearproj\bin\Microsoft.AI.WindowsServer.xml
+D:\GradProject\gearproj\gearproj\bin\Microsoft.AI.Web.xml
+D:\GradProject\gearproj\gearproj\obj\Debug\gearproj.csprojResolveAssemblyReference.cache
+D:\GradProject\gearproj\gearproj\obj\Debug\gearproj.dll
+D:\GradProject\gearproj\gearproj\obj\Debug\gearproj.pdb
+D:\GradProject\gearproj\gearproj\obj\Debug\gearproj.Migrations._1.resources
+D:\GradProject\gearproj\gearproj\obj\Debug\gearproj.csproj.GenerateResource.Cache
+D:\GradProject\gearproj\gearproj\bin\System.Web.Cors.dll
+D:\GradProject\gearproj\gearproj\bin\System.Web.Http.Cors.dll
+D:\GradProject\gearproj\gearproj\bin\System.Web.Http.Cors.xml
+D:\GradProject\gearproj\gearproj\obj\Debug\gearproj.Migrations.f.resources
