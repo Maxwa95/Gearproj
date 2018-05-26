@@ -48,6 +48,19 @@ namespace gearproj.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+        [Required]
+        [MaxLength(50)]
+        public string FirstName { get; set; }
+        [Required]
+        [MaxLength(50)]
+        public string LastName { get; set; }
+        [Required]
+        public string city { get; set; }
+        [Required]
+        public string PhoneNumber { get; set; }
+        public string usertype { get; set; }
+
+
     }
 
     public class RegisterExternalBindingModel
@@ -56,6 +69,23 @@ namespace gearproj.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
     }
+    public class Owner : RegisterBindingModel
+    {
+        [Required]
+        [MaxLength(255)]
+        public string CompanyName { get; set; }
+        [Required]
+        [MaxLength(255)]
+        public string Address { get; set; }
+        [Required]
+        public string HomePhone { get; set; }
+        [Required]
+        [MaxLength(255)]
+        public string Description { get; set; }
+    }
+
+
+
 
     public class RemoveLoginBindingModel
     {

@@ -328,11 +328,55 @@ namespace gearproj.Controllers
                 return BadRequest(ModelState);
             }
 
-            var user = new ApplicationUser() { UserName = model.Email, Email = model.Email };
+            var user = new ApplicationUser()
+            {
+                UserName = model.Email,
+                Email = model.Email,
+                FirstName = model.FirstName,
+                LastName = model.LastName,
+                PhoneNumber = model.PhoneNumber,
+                city = model.city,
+                usertype = "client"
+            };
 
             IdentityResult result = await UserManager.CreateAsync(user, model.Password);
 
             if (!result.Succeeded)
+            {
+                return GetErrorResult(result);
+            }
+
+            return Ok();
+        }
+
+
+        ApplicationDbContext db = new ApplicationDbContext();
+        [AllowAnonymous]
+        [Route("RegisterSeller")]
+        [HttpPost]
+
+        public async Task<IHttpActionResult> RegisterSeller(Owner model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var user = new ApplicationUser()
+            {
+                UserName = model.Email,
+                Email = model.Email,
+                FirstName = model.FirstName,
+                LastName = model.LastName,
+                PhoneNumber = model.PhoneNumber,
+                city = model.city,
+                usertype = "Seller"
+            };
+
+            IdentityResult result = await UserManager.CreateAsync(user, model.Password);
+            db.Companies.Add(new Company { CompanyName = model.CompanyName, Address = model.Address, HomePhone = model.HomePhone, Description = model.Description });
+            int f = db.SaveChanges();
+            if (!result.Succeeded || f != 1)
             {
                 return GetErrorResult(result);
             }
