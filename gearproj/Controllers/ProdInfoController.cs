@@ -8,13 +8,14 @@ using System.Web.Http;
 
 namespace gearproj.Controllers
 {
+    [Authorize(Roles = "Client")]
     public class ProdInfoController : ApiController
     {
         ApplicationDbContext db = new ApplicationDbContext();
-        // GET: api/Feedbacks
-       
+
 
         // GET: api/Feedbacks/5
+        [HttpGet, Route("api/prod/{prodid:int}")]
         public IHttpActionResult Get(int prodid)
         {
            var p = db.products.FirstOrDefault(a => a.productId == prodid);
@@ -27,20 +28,6 @@ namespace gearproj.Controllers
 
 
         }
-
-        // POST: api/Feedbacks
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT: api/Feedbacks/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE: api/Feedbacks/5
-        public void Delete(int id)
-        {
-        }
+        
     }
 }

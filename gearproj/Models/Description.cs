@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -24,7 +25,7 @@ namespace gearproj.Models
         public string MoreDetails { get; set; }
 
         public int YearOfProduct { get; set; }
-
+        [JsonIgnore]
         public Product Prod { get; set; }
 
 

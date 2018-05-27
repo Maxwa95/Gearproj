@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data.Entity; 
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json;
+
 namespace gearproj.Models
  { 
     public class NeededProducts
@@ -22,7 +24,8 @@ namespace gearproj.Models
         public string StatuseResponce{get;set;} //pending //closed // invalid request
         
         public string TextResponce {get;set;}
-       public virtual List<SimilaritiesProducts> Products { get; set; }
+        [JsonIgnore]
+        public virtual List<SimilaritiesProducts> Products { get; set; }
     } 
             
 }

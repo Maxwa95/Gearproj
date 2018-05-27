@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -15,7 +16,8 @@ namespace gearproj.Models
         public string ImgUrl { get; set; }
         [ForeignKey("Pro")]
         public int ProductId { get; set; }
-        
+        [JsonIgnore]
+
         public Product Pro { get; set; }
 
     }

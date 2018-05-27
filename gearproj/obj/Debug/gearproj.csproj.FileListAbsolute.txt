@@ -215,3 +215,4 @@ D:\GradProject\gearproj\gearproj\bin\System.Web.Cors.dll
 D:\GradProject\gearproj\gearproj\bin\System.Web.Http.Cors.dll
 D:\GradProject\gearproj\gearproj\bin\System.Web.Http.Cors.xml
 D:\GradProject\gearproj\gearproj\obj\Debug\gearproj.Migrations.f.resources
+D:\GradProject\gearproj\gearproj\obj\Debug\gearproj.Migrations.feedbacksupdate.resources

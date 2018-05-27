@@ -235,10 +235,9 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BrandsController.cs" />
     <Compile Include="Controllers\ClientProductsController.cs" />
+    <Compile Include="Controllers\FeedbackController.cs" />
     <Compile Include="Controllers\ProdInfoController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SellerController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -249,6 +248,10 @@
     <Compile Include="Migrations\201805261007276_f.cs" />
     <Compile Include="Migrations\201805261007276_f.Designer.cs">
       <DependentUpon>201805261007276_f.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805261446486_feedbacksupdate.cs" />
+    <Compile Include="Migrations\201805261446486_feedbacksupdate.Designer.cs">
+      <DependentUpon>201805261446486_feedbacksupdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
@@ -356,6 +359,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805261007276_f.resx">
       <DependentUpon>201805261007276_f.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805261446486_feedbacksupdate.resx">
+      <DependentUpon>201805261446486_feedbacksupdate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

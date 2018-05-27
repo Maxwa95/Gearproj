@@ -8,16 +8,29 @@ using System.Web.Http;
 
 namespace gearproj.Controllers
 {
+    
+
     public class ClientProductsController : ApiController
     {
         ApplicationDbContext db = new ApplicationDbContext();
-        // GET: api/ClientProducts
-        public IEnumerable<string> Get()
+        
+        public IHttpActionResult Get(int pagenum)
         {
-            return new string[] { "value1", "value2" };
+            int pgn = pagenum < 0 ? 1 :  pagenum > Math.Ceiling(db.products.Count() / 8.0) ?  (int)Math.Ceiling(db.products.Count() / 8.0) : pagenum ;
+            int count = db.products.Count() < pgn*8 ? ((pgn-1) * 8 )  : (pgn-1)*8 ;
+            var prods = db.products.OrderByDescending(k => k.productId).Skip(count).Take(8);
+            if (prods == null)
+            {
+                return NotFound();
+            }
+            else
+             return Ok(prods);
         }
+        
 
-        public IHttpActionResult Get(int id)
+        //get top selling products
+
+        public IHttpActionResult Gettopselling()
         {
             List<Product> prods = new List<Product>();
             var bestproducts = db.OrderDetails.GroupBy(i => i.productId).Select(g => new
@@ -38,20 +51,20 @@ namespace gearproj.Controllers
 
             return Ok(prods);
         }
-
-        // POST: api/ClientProducts
-        public void Post([FromBody]string value)
+        [HttpGet]
+        public IHttpActionResult Getprod(int id)
         {
+            var res = db.products.FirstOrDefault(a => a.productId == id);
+            var others = db.products.Where(a => a.CategoryId == res.CategoryId).Take(3);
+           
+            if (res == null)
+            {
+                return NotFound();
+            }
+            else
+            return Ok(new {res,others});
         }
 
-        // PUT: api/ClientProducts/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
 
-        // DELETE: api/ClientProducts/5
-        public void Delete(int id)
-        {
-        }
     }
 }

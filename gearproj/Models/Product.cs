@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data.Entity;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json;
 
 namespace gearproj.Models
 {
@@ -20,7 +21,9 @@ namespace gearproj.Models
         [StringLength(45, MinimumLength = 2)]
         public string PlaceOfOrigin { get; set; }
         [Required]
+        [JsonIgnore]
         public DateTime DateOfPublish { get; set; }
+        [JsonIgnore]
         public List<Image> Imgs { get; set; }
         public float Price { get; set; }
         public float Discount { get; set; }
@@ -30,10 +33,11 @@ namespace gearproj.Models
         [ForeignKey("cats")]
         public int CategoryId { get; set; }
         public int Rate { get; set; }
-
+        [JsonIgnore]
         public Company cpy { get; set; }
+        [JsonIgnore]
         public Categories cats { get; set; }
-
+        [JsonIgnore]
         public virtual List<FeedBack> feeds { get; set; }
 
 
@@ -41,12 +45,14 @@ namespace gearproj.Models
         public int BrandId { get; set; }
         [ForeignKey("mod")]
         public int ModelId { get; set; }
+        [JsonIgnore]
 
-        
         public Brand bra { get; set; }
+        [JsonIgnore]
         public Model mod { get; set; }
+        [JsonIgnore]
         public virtual List<OrderDetails> Orders { get; set; }
-
+        [JsonIgnore]
         public virtual List<SimilaritiesProducts> needs { get; set; }
 
 

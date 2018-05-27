@@ -8,34 +8,17 @@ using gearproj.Models;
 
 namespace gearproj.Controllers
 {
+    
     public class BrandsController : ApiController
     {
         ApplicationDbContext db = new ApplicationDbContext();
         // GET: api/Brands
+        // get brands infos
         public HttpResponseMessage Get()
         {
-            return Request.CreateResponse(HttpStatusCode.OK,db.Brands);
+            return Request.CreateResponse(HttpStatusCode.OK,db.Brands.Select(i => new { i.BrandName,i.ImagePath }).ToList());
         }
 
-        // GET: api/Brands/5
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST: api/Brands
-        public void Post([FromBody]string value)
-        {
-        }
-
-        // PUT: api/Brands/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE: api/Brands/5
-        public void Delete(int id)
-        {
-        }
+        
     }
 }

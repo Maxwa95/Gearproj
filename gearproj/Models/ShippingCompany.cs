@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data.Entity; 
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json;
+
 namespace gearproj.Models
  { 
     public class ShippingCompany 
@@ -19,6 +21,7 @@ namespace gearproj.Models
         public string PhoneNumber{get;set;}
         [Required]
         public int MaxDeliveryDays {get;set;}
+        [JsonIgnore]
         public List<OrderInfo> Orders { get; set; }
     
     } 

@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using System.Data.Entity; 
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json;
+
 namespace gearproj.Models
  { 
     public class OrderDetails
@@ -18,10 +20,12 @@ namespace gearproj.Models
         // relations 
         [ForeignKey("order")]
         public int OrderId { get; set; }
+        [JsonIgnore]
         public OrderInfo order { get; set; }
 
         [ForeignKey("pro")]
         public int productId { get; set; }
+        [JsonIgnore]
         public Product pro { get; set; }
     } 
             

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -16,6 +17,7 @@ namespace gearproj.Models
         [ForeignKey("brand")]
         public int? BrandId { get; set; }
         public Brand brand { get; set; }
+        [JsonIgnore]
         public virtual List<Categories_Model> categories { get; set; }
     }
 }

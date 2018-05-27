@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -27,6 +28,7 @@ namespace gearproj.Models
         public float Rate { get; set; }
         [ForeignKey("user")]
         public string userid { get; set; }
+        [JsonIgnore]
         public ApplicationUser user { get; set; }
 
        public Company()
