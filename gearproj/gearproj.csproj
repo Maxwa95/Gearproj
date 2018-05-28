@@ -253,6 +253,10 @@
     <Compile Include="Migrations\201805261446486_feedbacksupdate.Designer.cs">
       <DependentUpon>201805261446486_feedbacksupdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805281143577_ok.cs" />
+    <Compile Include="Migrations\201805281143577_ok.Designer.cs">
+      <DependentUpon>201805281143577_ok.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -264,6 +268,7 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Image.cs" />
     <Compile Include="Models\Model.cs" />
+    <Compile Include="Models\modelsproducts.cs" />
     <Compile Include="Models\NeededProducts.cs" />
     <Compile Include="Models\OrderDetails.cs" />
     <Compile Include="Models\OrderInfo.cs" />
@@ -362,6 +367,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201805261446486_feedbacksupdate.resx">
       <DependentUpon>201805261446486_feedbacksupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805281143577_ok.resx">
+      <DependentUpon>201805281143577_ok.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

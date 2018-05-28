@@ -19,5 +19,8 @@ namespace gearproj.Models
         public Brand brand { get; set; }
         [JsonIgnore]
         public virtual List<Categories_Model> categories { get; set; }
+
+        [JsonIgnore]
+        public virtual List<modelsproducts> modelproducts { get; set; }
     }
 }
