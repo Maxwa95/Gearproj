@@ -85,7 +85,6 @@ namespace gearproj.Controllers
             if (c == null)
             {
                 return StatusCode(HttpStatusCode.BadRequest);
-
             }
             else
             {

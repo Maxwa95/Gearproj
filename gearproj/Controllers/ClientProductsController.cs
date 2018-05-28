@@ -21,7 +21,7 @@ namespace gearproj.Controllers
             var prods = db.products.OrderByDescending(k => k.productId).Skip(count).Take(8);
             if (prods == null)
             {
-                return NotFound();
+                return BadRequest();
             }
             else
              return Ok(prods);
@@ -55,11 +55,11 @@ namespace gearproj.Controllers
         public IHttpActionResult Getprod(int id)
         {
             var res = db.products.FirstOrDefault(a => a.productId == id);
-            var others = db.products.Where(a => a.CategoryId == res.CategoryId).Take(3);
+            var others = db.products.Where(a => a.CategoryId == res.CategoryId && a.productId != res.productId).Take(3);
            
             if (res == null)
             {
-                return NotFound();
+                return BadRequest();
             }
             else
             return Ok(new {res,others});

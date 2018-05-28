@@ -8,7 +8,7 @@ using System.Web.Http;
 
 namespace gearproj.Controllers
 {
-    [Authorize(Roles = "Client")]
+   
     public class ProdInfoController : ApiController
     {
         ApplicationDbContext db = new ApplicationDbContext();
