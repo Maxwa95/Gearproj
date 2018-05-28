@@ -22,7 +22,7 @@ namespace gearproj.Controllers
             var c = db.Companies.FirstOrDefault(a => a.CompanyId == id);
             if (c == null)
             {
-                return StatusCode(HttpStatusCode.NotFound);
+                return BadRequest();
             }
             else
             {
@@ -30,9 +30,9 @@ namespace gearproj.Controllers
             }
 
         }
-        
-        [HttpGet, Route("api/seller/products/{companyid:int}")]
-        public IHttpActionResult GetProds(int companyid)
+      
+        [HttpGet, Route("api/seller/GetProducts/{companyid:int}")]
+        public IHttpActionResult GetProducts(int companyid)
         {
             var _var = db.products.Where(a => a.CompanyId == companyid);
 
@@ -78,13 +78,13 @@ namespace gearproj.Controllers
         }
 
         [Authorize(Roles = "Seller")]
-        [HttpDelete, Route("api/seller/{Companyid:int}/product/{Productid:int}")]
-        public IHttpActionResult DeleteProd(int Companyid,int Productid)
+        [HttpDelete, Route("api/seller/product/{Productid:int}")]
+        public IHttpActionResult DeleteProd(int Productid)
         {
-            var c = db.products.FirstOrDefault(a =>a.CompanyId == Companyid && a.productId == Productid);
+            var c = db.products.FirstOrDefault(a=> a.productId == Productid);
             if (c == null)
             {
-                return StatusCode(HttpStatusCode.BadRequest);
+                return BadRequest();
 
             }
             else

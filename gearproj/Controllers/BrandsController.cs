@@ -18,7 +18,14 @@ namespace gearproj.Controllers
         {
             return Request.CreateResponse(HttpStatusCode.OK,db.Brands.Select(i => new { i.BrandName,i.ImagePath }).ToList());
         }
+       [Route("api/brandslist")]
+        public HttpResponseMessage Getallbrands()
+        {
+            return Request.CreateResponse(HttpStatusCode.OK, db.Brands.Select(i => new { i.BrandName, i.BrandId }).ToList());
+        }
 
-        
+
+
+
     }
 }

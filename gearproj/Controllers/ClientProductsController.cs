@@ -51,20 +51,8 @@ namespace gearproj.Controllers
 
             return Ok(prods);
         }
-        [HttpGet]
-        public IHttpActionResult Getprod(int id)
-        {
-            var res = db.products.FirstOrDefault(a => a.productId == id);
-            var others = db.products.Where(a => a.CategoryId == res.CategoryId).Take(3);
-           
-            if (res == null)
-            {
-                return NotFound();
-            }
-            else
-            return Ok(new {res,others});
-        }
-
+   
+      
 
     }
 }

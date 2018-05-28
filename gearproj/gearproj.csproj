@@ -236,7 +236,9 @@
     <Compile Include="Controllers\BrandsController.cs" />
     <Compile Include="Controllers\ClientProductsController.cs" />
     <Compile Include="Controllers\FeedbackController.cs" />
+    <Compile Include="Controllers\ModelsController.cs" />
     <Compile Include="Controllers\ProdInfoController.cs" />
+    <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\SellerController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

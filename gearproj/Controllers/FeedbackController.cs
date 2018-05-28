@@ -8,7 +8,7 @@ using gearproj.Models;
 
 namespace gearproj.Controllers
 {
-    [Authorize]
+  
     public class FeedbackController : ApiController
     {
         ApplicationDbContext db = new ApplicationDbContext();
