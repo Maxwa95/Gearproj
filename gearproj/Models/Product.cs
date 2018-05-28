@@ -43,17 +43,18 @@ namespace gearproj.Models
 
         [ForeignKey("bra")]
         public int BrandId { get; set; }
-        [ForeignKey("mod")]
-        public int ModelId { get; set; }
+       
         [JsonIgnore]
 
         public Brand bra { get; set; }
-        [JsonIgnore]
-        public Model mod { get; set; }
+        
         [JsonIgnore]
         public virtual List<OrderDetails> Orders { get; set; }
         [JsonIgnore]
         public virtual List<SimilaritiesProducts> needs { get; set; }
+
+        [JsonIgnore]
+        public virtual List<modelsproducts> modelproducts { get; set; }
 
 
 
