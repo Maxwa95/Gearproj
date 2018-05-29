@@ -84,8 +84,9 @@ namespace gearproj.Controllers
             var c = db.products.FirstOrDefault(a=> a.productId == Productid);
             if (c == null)
             {
-                return BadRequest();
 
+                return BadRequest();
+                
             }
             else
             {

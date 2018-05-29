@@ -3,7 +3,7 @@ namespace gearproj.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class _1 : DbMigration
+    public partial class on : DbMigration
     {
         public override void Up()
         {
@@ -51,6 +51,44 @@ namespace gearproj.Migrations
                         CategoriesName = c.String(nullable: false, maxLength: 100),
                     })
                 .PrimaryKey(t => t.CategoriesId);
+            
+            CreateTable(
+                "dbo.modelsproducts",
+                c => new
+                    {
+                        id = c.Int(nullable: false, identity: true),
+                        productId = c.Int(nullable: false),
+                        modelId = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.id)
+                .ForeignKey("dbo.Models", t => t.modelId, cascadeDelete: true)
+                .ForeignKey("dbo.Products", t => t.productId, cascadeDelete: true)
+                .Index(t => t.productId)
+                .Index(t => t.modelId);
+            
+            CreateTable(
+                "dbo.Products",
+                c => new
+                    {
+                        productId = c.Int(nullable: false, identity: true),
+                        ProductName = c.String(nullable: false, maxLength: 255),
+                        PlaceOfOrigin = c.String(nullable: false, maxLength: 45),
+                        DateOfPublish = c.DateTime(nullable: false),
+                        Price = c.Single(nullable: false),
+                        Discount = c.Single(nullable: false),
+                        Quantity = c.Int(nullable: false),
+                        CompanyId = c.Int(nullable: false),
+                        CategoryId = c.Int(nullable: false),
+                        Rate = c.Int(nullable: false),
+                        BrandId = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.productId)
+                .ForeignKey("dbo.Brands", t => t.BrandId, cascadeDelete: true)
+                .ForeignKey("dbo.Categories", t => t.CategoryId, cascadeDelete: true)
+                .ForeignKey("dbo.Companies", t => t.CompanyId, cascadeDelete: true)
+                .Index(t => t.CompanyId)
+                .Index(t => t.CategoryId)
+                .Index(t => t.BrandId);
             
             CreateTable(
                 "dbo.Companies",
@@ -111,42 +149,40 @@ namespace gearproj.Migrations
                 c => new
                     {
                         FeedBackId = c.Int(nullable: false, identity: true),
-                        Comment = c.String(maxLength: 255),
-                        Userid = c.String(maxLength: 128),
+                        Comment = c.String(nullable: false, maxLength: 255),
+                        Userid = c.String(nullable: false, maxLength: 128),
                         Productid = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.FeedBackId)
                 .ForeignKey("dbo.Products", t => t.Productid, cascadeDelete: true)
-                .ForeignKey("dbo.AspNetUsers", t => t.Userid)
+                .ForeignKey("dbo.AspNetUsers", t => t.Userid, cascadeDelete: true)
                 .Index(t => t.Userid)
                 .Index(t => t.Productid);
             
             CreateTable(
-                "dbo.Products",
+                "dbo.AspNetUserLogins",
                 c => new
                     {
-                        productId = c.Int(nullable: false, identity: true),
-                        ProductName = c.String(nullable: false, maxLength: 255),
-                        PlaceOfOrigin = c.String(nullable: false, maxLength: 45),
-                        DateOfPublish = c.DateTime(nullable: false),
-                        Price = c.Single(nullable: false),
-                        Discount = c.Single(nullable: false),
-                        Quantity = c.Int(nullable: false),
-                        CompanyId = c.Int(nullable: false),
-                        CategoryId = c.Int(nullable: false),
-                        Rate = c.Int(nullable: false),
-                        BrandId = c.Int(nullable: false),
-                        ModelId = c.Int(nullable: false),
+                        LoginProvider = c.String(nullable: false, maxLength: 128),
+                        ProviderKey = c.String(nullable: false, maxLength: 128),
+                        UserId = c.String(nullable: false, maxLength: 128),
                     })
-                .PrimaryKey(t => t.productId)
-                .ForeignKey("dbo.Brands", t => t.BrandId, cascadeDelete: true)
-                .ForeignKey("dbo.Categories", t => t.CategoryId, cascadeDelete: true)
-                .ForeignKey("dbo.Companies", t => t.CompanyId, cascadeDelete: true)
-                .ForeignKey("dbo.Models", t => t.ModelId, cascadeDelete: true)
-                .Index(t => t.CompanyId)
-                .Index(t => t.CategoryId)
-                .Index(t => t.BrandId)
-                .Index(t => t.ModelId);
+                .PrimaryKey(t => new { t.LoginProvider, t.ProviderKey, t.UserId })
+                .ForeignKey("dbo.AspNetUsers", t => t.UserId, cascadeDelete: true)
+                .Index(t => t.UserId);
+            
+            CreateTable(
+                "dbo.AspNetUserRoles",
+                c => new
+                    {
+                        UserId = c.String(nullable: false, maxLength: 128),
+                        RoleId = c.String(nullable: false, maxLength: 128),
+                    })
+                .PrimaryKey(t => new { t.UserId, t.RoleId })
+                .ForeignKey("dbo.AspNetUsers", t => t.UserId, cascadeDelete: true)
+                .ForeignKey("dbo.AspNetRoles", t => t.RoleId, cascadeDelete: true)
+                .Index(t => t.UserId)
+                .Index(t => t.RoleId);
             
             CreateTable(
                 "dbo.Images",
@@ -226,37 +262,12 @@ namespace gearproj.Migrations
                 c => new
                     {
                         ShippingCompanyId = c.Int(nullable: false, identity: true),
-                        Name = c.Int(nullable: false),
-                        Address = c.Single(nullable: false),
+                        Name = c.String(nullable: false),
+                        Address = c.String(nullable: false),
                         PhoneNumber = c.String(nullable: false),
                         MaxDeliveryDays = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.ShippingCompanyId);
-            
-            CreateTable(
-                "dbo.AspNetUserLogins",
-                c => new
-                    {
-                        LoginProvider = c.String(nullable: false, maxLength: 128),
-                        ProviderKey = c.String(nullable: false, maxLength: 128),
-                        UserId = c.String(nullable: false, maxLength: 128),
-                    })
-                .PrimaryKey(t => new { t.LoginProvider, t.ProviderKey, t.UserId })
-                .ForeignKey("dbo.AspNetUsers", t => t.UserId, cascadeDelete: true)
-                .Index(t => t.UserId);
-            
-            CreateTable(
-                "dbo.AspNetUserRoles",
-                c => new
-                    {
-                        UserId = c.String(nullable: false, maxLength: 128),
-                        RoleId = c.String(nullable: false, maxLength: 128),
-                    })
-                .PrimaryKey(t => new { t.UserId, t.RoleId })
-                .ForeignKey("dbo.AspNetUsers", t => t.UserId, cascadeDelete: true)
-                .ForeignKey("dbo.AspNetRoles", t => t.RoleId, cascadeDelete: true)
-                .Index(t => t.UserId)
-                .Index(t => t.RoleId);
             
             CreateTable(
                 "dbo.Descriptions",
@@ -291,31 +302,29 @@ namespace gearproj.Migrations
         {
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
             DropForeignKey("dbo.Descriptions", "ProdId", "dbo.Products");
-            DropForeignKey("dbo.Companies", "userid", "dbo.AspNetUsers");
-            DropForeignKey("dbo.AspNetUserRoles", "UserId", "dbo.AspNetUsers");
-            DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
-            DropForeignKey("dbo.FeedBacks", "Userid", "dbo.AspNetUsers");
-            DropForeignKey("dbo.FeedBacks", "Productid", "dbo.Products");
+            DropForeignKey("dbo.modelsproducts", "productId", "dbo.Products");
             DropForeignKey("dbo.OrderDetails", "productId", "dbo.Products");
             DropForeignKey("dbo.OrderDetails", "OrderId", "dbo.OrderInfoes");
             DropForeignKey("dbo.OrderInfoes", "userid", "dbo.AspNetUsers");
             DropForeignKey("dbo.OrderInfoes", "ShippingCompanyid", "dbo.ShippingCompanies");
             DropForeignKey("dbo.SimilaritiesProducts", "productId", "dbo.Products");
             DropForeignKey("dbo.SimilaritiesProducts", "NeededProductsId", "dbo.NeededProducts");
-            DropForeignKey("dbo.Products", "ModelId", "dbo.Models");
             DropForeignKey("dbo.Images", "ProductId", "dbo.Products");
             DropForeignKey("dbo.Products", "CompanyId", "dbo.Companies");
+            DropForeignKey("dbo.Companies", "userid", "dbo.AspNetUsers");
+            DropForeignKey("dbo.AspNetUserRoles", "UserId", "dbo.AspNetUsers");
+            DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
+            DropForeignKey("dbo.FeedBacks", "Userid", "dbo.AspNetUsers");
+            DropForeignKey("dbo.FeedBacks", "Productid", "dbo.Products");
+            DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.Products", "CategoryId", "dbo.Categories");
             DropForeignKey("dbo.Products", "BrandId", "dbo.Brands");
-            DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
+            DropForeignKey("dbo.modelsproducts", "modelId", "dbo.Models");
             DropForeignKey("dbo.Categories_Model", "ModelId", "dbo.Models");
             DropForeignKey("dbo.Categories_Model", "CategoriesId", "dbo.Categories");
             DropForeignKey("dbo.Models", "BrandId", "dbo.Brands");
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
             DropIndex("dbo.Descriptions", new[] { "ProdId" });
-            DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
-            DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
-            DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
             DropIndex("dbo.OrderInfoes", new[] { "ShippingCompanyid" });
             DropIndex("dbo.OrderInfoes", new[] { "userid" });
             DropIndex("dbo.OrderDetails", new[] { "productId" });
@@ -323,33 +332,38 @@ namespace gearproj.Migrations
             DropIndex("dbo.SimilaritiesProducts", new[] { "productId" });
             DropIndex("dbo.SimilaritiesProducts", new[] { "NeededProductsId" });
             DropIndex("dbo.Images", new[] { "ProductId" });
-            DropIndex("dbo.Products", new[] { "ModelId" });
-            DropIndex("dbo.Products", new[] { "BrandId" });
-            DropIndex("dbo.Products", new[] { "CategoryId" });
-            DropIndex("dbo.Products", new[] { "CompanyId" });
+            DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
+            DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
+            DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
             DropIndex("dbo.FeedBacks", new[] { "Productid" });
             DropIndex("dbo.FeedBacks", new[] { "Userid" });
             DropIndex("dbo.AspNetUserClaims", new[] { "UserId" });
             DropIndex("dbo.AspNetUsers", "UserNameIndex");
             DropIndex("dbo.Companies", new[] { "userid" });
+            DropIndex("dbo.Products", new[] { "BrandId" });
+            DropIndex("dbo.Products", new[] { "CategoryId" });
+            DropIndex("dbo.Products", new[] { "CompanyId" });
+            DropIndex("dbo.modelsproducts", new[] { "modelId" });
+            DropIndex("dbo.modelsproducts", new[] { "productId" });
             DropIndex("dbo.Categories_Model", new[] { "ModelId" });
             DropIndex("dbo.Categories_Model", new[] { "CategoriesId" });
             DropIndex("dbo.Models", new[] { "BrandId" });
             DropTable("dbo.AspNetRoles");
             DropTable("dbo.Descriptions");
-            DropTable("dbo.AspNetUserRoles");
-            DropTable("dbo.AspNetUserLogins");
             DropTable("dbo.ShippingCompanies");
             DropTable("dbo.OrderInfoes");
             DropTable("dbo.OrderDetails");
             DropTable("dbo.NeededProducts");
             DropTable("dbo.SimilaritiesProducts");
             DropTable("dbo.Images");
-            DropTable("dbo.Products");
+            DropTable("dbo.AspNetUserRoles");
+            DropTable("dbo.AspNetUserLogins");
             DropTable("dbo.FeedBacks");
             DropTable("dbo.AspNetUserClaims");
             DropTable("dbo.AspNetUsers");
             DropTable("dbo.Companies");
+            DropTable("dbo.Products");
+            DropTable("dbo.modelsproducts");
             DropTable("dbo.Categories");
             DropTable("dbo.Categories_Model");
             DropTable("dbo.Models");

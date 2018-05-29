@@ -7,13 +7,13 @@ namespace gearproj.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class feedbacksupdate : IMigrationMetadata
+    public sealed partial class on : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(feedbacksupdate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(on));
         
         string IMigrationMetadata.Id
         {
-            get { return "201805261446486_feedbacksupdate"; }
+            get { return "201805281245349_on"; }
         }
         
         string IMigrationMetadata.Source
