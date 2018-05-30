@@ -23,7 +23,7 @@ namespace gearproj.Models
         [Required]
         [JsonIgnore]
         public DateTime DateOfPublish { get; set; }
-        [JsonIgnore]
+        
         public List<Image> Imgs { get; set; }
         public float Price { get; set; }
         public float Discount { get; set; }
