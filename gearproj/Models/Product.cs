@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,10 +21,10 @@ namespace gearproj.Models
         [StringLength(45, MinimumLength = 2)]
         public string PlaceOfOrigin { get; set; }
         [Required]
-        [JsonIgnore]
         public DateTime DateOfPublish { get; set; }
         
-        public List<Image> Imgs { get; set; }
+        public virtual List<Image> Imgs { get; set; }
+        [Required]
         public float Price { get; set; }
         public float Discount { get; set; }
         public int Quantity { get; set; }
@@ -55,7 +55,6 @@ namespace gearproj.Models
 
         [JsonIgnore]
         public virtual List<modelsproducts> modelproducts { get; set; }
-
 
 
     }
