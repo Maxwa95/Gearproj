@@ -14,7 +14,7 @@ namespace gearproj.Controllers
 
         public IHttpActionResult get()
         {
-            return Ok(db.Models);
+            return Ok(db.Models.ToList());
         }
     }
 }
