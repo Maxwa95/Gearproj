@@ -37,7 +37,7 @@ namespace gearproj.Controllers
             {
                count = g.Count(),
                 id = g.Key
-            }).OrderByDescending(k => k.count).Take(4);
+            }).OrderByDescending(k => k.count).Take(4).ToList();
             if (bestproducts == null)
             {
                 return BadRequest();
