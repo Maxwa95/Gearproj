@@ -326,3 +326,4 @@ E:\geerproject\Gearproj\gearproj\bin\Microsoft.AI.WindowsServer.xml
 E:\geerproject\Gearproj\gearproj\bin\Microsoft.AI.Web.xml
 E:\geerproject\Gearproj\gearproj\obj\Debug\gearproj.Migrations.on.resources
 E:\geerproject\Gearproj\gearproj\obj\Debug\gearproj.csproj.GenerateResource.Cache
+E:\geerproject\Gearproj\gearproj\obj\Debug\gearproj.Migrations.aaa.resources

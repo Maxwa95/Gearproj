@@ -22,6 +22,8 @@ namespace gearproj.Models
         public string LastName { get; set; }
         [Required]
         public string city { get; set; }
+        [Required]
+        public string profileImage { get; set; }
 
         public virtual List<FeedBack> feedbacks { get; set; }
         
@@ -40,6 +42,7 @@ namespace gearproj.Models
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Categories> Categories { get; set; }
         public DbSet<modelsproducts> modelsproducts { get; set; }
+      
 
         public DbSet<Company> Companies { get; set; }
 
