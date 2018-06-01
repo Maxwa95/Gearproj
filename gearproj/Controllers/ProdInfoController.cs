@@ -9,25 +9,23 @@ using System.Web.Http;
 namespace gearproj.Controllers
 {
    
-    public class ProdInfoController : ApiController
+    public class ProductsController : ApiController
     {
         ApplicationDbContext db = new ApplicationDbContext();
 
 
         // GET: api/Feedbacks/5
-        [HttpGet, Route("api/product/{prodid:int}")]
-        public IHttpActionResult Get(int prodid)
+   
+        public IHttpActionResult Get(int id)
         {
-           var p = db.products.FirstOrDefault(a => a.productId == prodid);
-            var f = db.Feedbacks.Where(a => a.Productid == prodid);
-            var others = db.products.Where(a => a.CategoryId == p.CategoryId && a.productId != p.productId).Take(3);
+           var p = db.products.FirstOrDefault(a => a.productId == id);
+            var f = db.Feedbacks.Where(a => a.Productid == id).ToList();
+            var others = db.products.Where(a => a.CategoryId == p.CategoryId && a.productId != p.productId).Take(3).ToList();
             if (p == null)
             {
                 return BadRequest();
             }else
             return Ok(new { p, others,f });
-
-
         }
         
     }

@@ -34,7 +34,7 @@ namespace gearproj.Controllers
         [HttpGet, Route("api/seller/GetProducts/{companyid:int}")]
         public IHttpActionResult GetProducts(int companyid)
         {
-            var _var = db.products.Where(a => a.CompanyId == companyid);
+            var _var = db.products.Where(a => a.CompanyId == companyid).ToList();
 
             if (_var != null)
             {

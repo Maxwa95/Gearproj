@@ -1,4 +1,4 @@
-﻿using System.Security.Claims;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
@@ -41,8 +41,11 @@ namespace gearproj.Models
     {
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Categories> Categories { get; set; }
+<<<<<<< HEAD
         public DbSet<modelsproducts> modelsproducts { get; set; }
       
+=======
+>>>>>>> a302d6e1ffd0496957fbcb3932fb4c1784ef267d
 
         public DbSet<Company> Companies { get; set; }
 
@@ -58,6 +61,7 @@ namespace gearproj.Models
 
         public DbSet<FeedBack> Feedbacks { get; set; }
         public DbSet<SimilaritiesProducts>  SimilaritiesProducts { get; set; }
+        public DbSet<modelsproducts> modelProducts { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
