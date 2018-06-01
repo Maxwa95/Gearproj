@@ -4,14 +4,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Web;
 using System.Web.Http;
+
+
 
 namespace gearproj.Controllers
 {
     
     public class SellerController : ApiController
     {
-
+   
         ApplicationDbContext db = new ApplicationDbContext();
 
 
@@ -47,11 +50,23 @@ namespace gearproj.Controllers
         // POST: api/Seller
         [Authorize(Roles = "Seller")]
         [HttpPost, Route("api/seller/product")]
-        public IHttpActionResult Post([FromBody]Product product)
+        public IHttpActionResult Post([FromBody]Product product, params HttpPostedFileBase[] imgs)
         {
-           
+            Image i = new Image();
+            string name="";
+
             if (ModelState.IsValid)
             {
+
+                foreach (var img in imgs)
+                {
+                    name = new Random().Next(1) + img.FileName;
+                    i.ProductId = product.productId;
+                    i.ImgUrl = name;
+                    img.SaveAs(System.Web.Hosting.HostingEnvironment.MapPath("~") + "/ProductsImages/" + name);
+                    db.images.Add(i);
+                }
+              
                 db.products.Add(product);
                 db.SaveChanges();
                 return Ok(db.products);
