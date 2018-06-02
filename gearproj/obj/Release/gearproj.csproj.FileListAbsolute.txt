@@ -107,3 +107,4 @@ D:\gearapi\Gearproj\gearproj\obj\Release\gearproj.Migrations.on.resources
 D:\gearapi\Gearproj\gearproj\obj\Release\gearproj.csproj.GenerateResource.Cache
 D:\gearapi\Gearproj\gearproj\obj\Release\gearproj.dll
 D:\gearapi\Gearproj\gearproj\obj\Release\gearproj.pdb
+D:\gearapi\Gearproj\gearproj\obj\Release\gearproj.Migrations.aaa.resources
