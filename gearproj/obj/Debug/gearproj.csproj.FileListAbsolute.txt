@@ -373,7 +373,6 @@ D:\gearapi\Gearproj\gearproj\bin\Microsoft.AspNet.Identity.Core.dll
 D:\gearapi\Gearproj\gearproj\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 D:\gearapi\Gearproj\gearproj\bin\Microsoft.AspNet.Identity.Owin.dll
 D:\gearapi\Gearproj\gearproj\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\gearapi\Gearproj\gearproj\bin\Microsoft.Owin.dll
 D:\gearapi\Gearproj\gearproj\bin\Microsoft.Owin.Host.SystemWeb.dll
 D:\gearapi\Gearproj\gearproj\bin\Microsoft.Owin.Security.Cookies.dll
 D:\gearapi\Gearproj\gearproj\bin\Microsoft.Owin.Security.dll
@@ -442,3 +441,5 @@ D:\gearapi\Gearproj\gearproj\obj\Debug\gearproj.pdb
 D:\gearapi\Gearproj\gearproj\obj\Debug\gearproj.Migrations.aaa.resources
 E:\geerproject\Gearproj\gearproj\bin\Microsoft.Owin.Cors.dll
 E:\geerproject\Gearproj\gearproj\bin\Microsoft.Owin.Cors.xml
+D:\gearapi\Gearproj\gearproj\bin\Microsoft.Owin.Cors.dll
+D:\gearapi\Gearproj\gearproj\bin\Microsoft.Owin.Cors.xml

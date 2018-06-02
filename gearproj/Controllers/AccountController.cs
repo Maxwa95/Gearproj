@@ -316,11 +316,10 @@ namespace gearproj.Controllers
             }
 
             return logins;
-        }
-       
+        } 
+
         // POST api/Account/Register
-        [AllowAnonymous]//HttpPost
-        [HttpPost]
+        [AllowAnonymous,HttpPost]
         [Route("Register")]
         public async Task<IHttpActionResult> Register([FromBody]RegisterBindingModel model)
         {
@@ -342,10 +341,6 @@ namespace gearproj.Controllers
 
             IdentityResult result = await UserManager.CreateAsync(user, model.Password);
 
-            if (!result.Succeeded)
-            {
-                return GetErrorResult(result);
-            }
 
             return Ok();
         }

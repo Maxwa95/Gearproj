@@ -16,7 +16,7 @@ namespace gearproj.Controllers
         
         public IHttpActionResult Get(int pagenum)
         {
-            int pgn = pagenum < 0 ? 1 :  pagenum > Math.Ceiling(db.products.Count() / 8.0) ?  (int)Math.Ceiling(db.products.Count() / 8.0) : pagenum ;
+         int pgn = pagenum < 0 ? 1 :  pagenum > Math.Ceiling(db.products.Count() / 8.0) ?  (int)Math.Ceiling(db.products.Count() / 8.0) : pagenum ;
             int count = db.products.Count() < pgn*8 ? ((pgn-1) * 8 )  : (pgn-1)*8 ;
             var prods = db.products.OrderByDescending(k => k.productId).Skip(count).Take(8).ToList();
             if (prods == null)
@@ -24,7 +24,7 @@ namespace gearproj.Controllers
                 return BadRequest();
             }
             else
-             return Ok(prods);
+             return Ok("hi");
         }
         
 
