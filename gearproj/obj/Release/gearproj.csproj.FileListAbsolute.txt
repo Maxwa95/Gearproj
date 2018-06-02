@@ -106,6 +106,9 @@ D:\gearapi\Gearproj\gearproj\obj\Release\gearproj.Migrations.on.resources
 D:\gearapi\Gearproj\gearproj\obj\Release\gearproj.csproj.GenerateResource.Cache
 D:\gearapi\Gearproj\gearproj\obj\Release\gearproj.dll
 D:\gearapi\Gearproj\gearproj\obj\Release\gearproj.pdb
+<<<<<<< HEAD
 D:\gearapi\Gearproj\gearproj\obj\Release\gearproj.Migrations.aaa.resources
 D:\gearapi\Gearproj\gearproj\bin\Microsoft.Owin.Cors.dll
 D:\gearapi\Gearproj\gearproj\bin\Microsoft.Owin.Cors.xml
+=======
+>>>>>>> parent of ed4bd6b... s

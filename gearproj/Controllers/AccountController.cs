@@ -319,7 +319,7 @@ namespace gearproj.Controllers
         } 
 
         // POST api/Account/Register
-        [AllowAnonymous,HttpPost]
+        [AllowAnonymous]
         [Route("Register")]
         public async Task<IHttpActionResult> Register([FromBody]RegisterBindingModel model)
         {
