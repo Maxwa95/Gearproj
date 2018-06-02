@@ -11,7 +11,6 @@ namespace gearproj.Models
 {
    public class Image
     {
-        public Image() { }
         public int ImageId { get; set; }
         [Required]
         public string ImgUrl { get; set; }
