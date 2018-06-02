@@ -4,7 +4,7 @@ using System.Linq;
 using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(gearproj.Startup))]
+//[assembly: OwinStartup(typeof(gearproj.Startup))]
 
 namespace gearproj
 {
@@ -13,7 +13,7 @@ namespace gearproj
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
-            app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
+         //   app.UseCors(Microsoft.Owin.Cors.CorsOptions.AllowAll);
         }
     }
 }

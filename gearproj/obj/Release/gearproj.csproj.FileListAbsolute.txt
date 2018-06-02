@@ -42,7 +42,6 @@ D:\gearapi\Gearproj\gearproj\bin\Microsoft.AspNet.Identity.Core.dll
 D:\gearapi\Gearproj\gearproj\bin\Microsoft.AspNet.Identity.EntityFramework.dll
 D:\gearapi\Gearproj\gearproj\bin\Microsoft.AspNet.Identity.Owin.dll
 D:\gearapi\Gearproj\gearproj\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\gearapi\Gearproj\gearproj\bin\Microsoft.Owin.dll
 D:\gearapi\Gearproj\gearproj\bin\Microsoft.Owin.Host.SystemWeb.dll
 D:\gearapi\Gearproj\gearproj\bin\Microsoft.Owin.Security.Cookies.dll
 D:\gearapi\Gearproj\gearproj\bin\Microsoft.Owin.Security.dll
@@ -107,4 +106,9 @@ D:\gearapi\Gearproj\gearproj\obj\Release\gearproj.Migrations.on.resources
 D:\gearapi\Gearproj\gearproj\obj\Release\gearproj.csproj.GenerateResource.Cache
 D:\gearapi\Gearproj\gearproj\obj\Release\gearproj.dll
 D:\gearapi\Gearproj\gearproj\obj\Release\gearproj.pdb
+<<<<<<< HEAD
 D:\gearapi\Gearproj\gearproj\obj\Release\gearproj.Migrations.aaa.resources
+D:\gearapi\Gearproj\gearproj\bin\Microsoft.Owin.Cors.dll
+D:\gearapi\Gearproj\gearproj\bin\Microsoft.Owin.Cors.xml
+=======
+>>>>>>> parent of ed4bd6b... s
