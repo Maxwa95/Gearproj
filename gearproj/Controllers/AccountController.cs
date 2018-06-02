@@ -317,6 +317,8 @@ namespace gearproj.Controllers
 
             return logins;
         }
+        [HttpGet]
+        [Route("Test")]
         public  string Test()
         {
             return "test Pass";
@@ -325,6 +327,7 @@ namespace gearproj.Controllers
 
         // POST api/Account/Register
         [AllowAnonymous]//HttpPost
+        [HttpGet]
         [Route("Register")]
         public async Task<IHttpActionResult> Register()
         {
