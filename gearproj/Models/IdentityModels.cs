@@ -41,11 +41,8 @@ namespace gearproj.Models
     {
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Categories> Categories { get; set; }
-<<<<<<< HEAD
+
         public DbSet<modelsproducts> modelsproducts { get; set; }
-      
-=======
->>>>>>> a302d6e1ffd0496957fbcb3932fb4c1784ef267d
 
         public DbSet<Company> Companies { get; set; }
 
