@@ -316,38 +316,42 @@ namespace gearproj.Controllers
             }
 
             return logins;
-        } 
-
-        // POST api/Account/Register
-        [AllowAnonymous,HttpPost]
-        [Route("Register")]
-        public async Task<IHttpActionResult> Register([FromBody]RegisterBindingModel model)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            var user = new ApplicationUser()
-            {
-                UserName = model.Email,
-                Email = model.Email,
-                FirstName = model.FirstName,
-                LastName = model.LastName,
-                PhoneNumber = model.PhoneNumber,
-                city = model.city,
-                usertype = "client"
-            };
-
-            IdentityResult result = await UserManager.CreateAsync(user, model.Password);
-
-            if (!result.Succeeded)
-            {
-                return GetErrorResult(result);
-            }
-
-            return Ok();
         }
+      
+        // POST api/Account/Register
+        [AllowAnonymous]//HttpPost
+        [Route("Register")]
+        public async Task<IHttpActionResult> Register()
+        {
+            return null;
+        }
+        //public async Task<IHttpActionResult> Register([FromBody]RegisterBindingModel model)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
+
+        //    var user = new ApplicationUser()
+        //    {
+        //        UserName = model.Email,
+        //        Email = model.Email,
+        //        FirstName = model.FirstName,
+        //        LastName = model.LastName,
+        //        PhoneNumber = model.PhoneNumber,
+        //        city = model.city,
+        //        usertype = "client"
+        //    };
+
+        //    IdentityResult result = await UserManager.CreateAsync(user, model.Password);
+
+        //    if (!result.Succeeded)
+        //    {
+        //        return GetErrorResult(result);
+        //    }
+
+        //    return Ok();
+        //}
 
 
         ApplicationDbContext db = new ApplicationDbContext();
