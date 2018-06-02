@@ -317,7 +317,12 @@ namespace gearproj.Controllers
 
             return logins;
         }
-      
+        public  string Test()
+        {
+            return "test Pass";
+        }
+
+
         // POST api/Account/Register
         [AllowAnonymous]//HttpPost
         [Route("Register")]
@@ -325,6 +330,8 @@ namespace gearproj.Controllers
         {
             return null;
         }
+
+
         //public async Task<IHttpActionResult> Register([FromBody]RegisterBindingModel model)
         //{
         //    if (!ModelState.IsValid)
